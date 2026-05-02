@@ -1,0 +1,17 @@
+# requirements.txt
+db-dtypes
+dill
+fastapi
+from-root
+google-cloud-aiplatform
+google-genai
+httpx
+pandas
+pytest
+python-dotenv
+pytz
+pyyaml
+scipy
+statsmodels
+tabulate
+uvicorn
