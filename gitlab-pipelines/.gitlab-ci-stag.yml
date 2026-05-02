@@ -9,9 +9,9 @@ variables:
   IMAGE_TAG: "latest"
   STAGING_PROJECT_ID: "gcp_stag_project_id"
   STAGING_PROJECT_REGION: "us-central1"
-  AR_REPOSITORY: "spinotale-insight-generation-${ENVIRONMENT}"
-  IMAGE_AR_PATH: "${STAGING_PROJECT_REGION}-docker.pkg.dev/${STAGING_PROJECT_ID}/${AR_REPOSITORY}/spinotale-insight-generation:${IMAGE_TAG}"
-  GCP_CLOUD_RUN_SERVICE_NAME: "spinotale-insight-generation"
+  AR_REPOSITORY: "insight-generation-model-${ENVIRONMENT}"
+  IMAGE_AR_PATH: "${STAGING_PROJECT_REGION}-docker.pkg.dev/${STAGING_PROJECT_ID}/${AR_REPOSITORY}/insight-generation-model:${IMAGE_TAG}"
+  GCP_CLOUD_RUN_SERVICE_NAME: "insight-generation-model"
 
 build-and-push-image:
   stage: build

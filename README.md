@@ -180,12 +180,12 @@ pytest --cov=app --cov-report=html
 
 ### Build the Docker image:
 ```bash
-docker build -t spinotale-insight-generation-{ENVIRONMENT}:latest .
+docker build -t insight-generation-model-{ENVIRONMENT}:latest .
 ```
 
 ### Run the container:
 ```bash
-docker run -p 8000:8000 spinotale-insight-generation-{ENVIRONMENT}:latest
+docker run -p 8000:8000 insight-generation-model-{ENVIRONMENT}:latest
 ```
 
 ## 🛠️ CI/CD Pipelines
