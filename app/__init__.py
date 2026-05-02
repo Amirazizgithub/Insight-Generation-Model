@@ -43,8 +43,8 @@ async def root():
         return JSONResponse(content={"message": str(e)}, status_code=500)
 
 
-app.include_router(health_router.health_router, prefix="api/v1")
-app.include_router(cdp_insight_router.cdp_insight_router, prefix="api/v1")
+app.include_router(health_router.health_router, prefix="/api/v1")
+app.include_router(cdp_insight_router.cdp_insight_router, prefix="/api/v1")
 app.include_router(
-    intelligence_insight_router.intelligence_insight_router, prefix="api/v1"
+    intelligence_insight_router.intelligence_insight_router, prefix="/api/v1"
 )
